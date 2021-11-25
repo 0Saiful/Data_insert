@@ -1,0 +1,48 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <center>
+        ] <form action="{% url 'add_emp' %}" method="post">
+            {% csrf_token %}
+            <div class="container">
+
+                <div class="form_group">
+                    <label>ID:</label>
+                    <input type="text" name="ID">
+                </div>
+                <br>
+                <div class="form_group">
+                    <label>Name:</label>
+                    <input type="text" name="name">
+                </div>
+                <br>
+                <div class="form_group">
+                    <label>Post:</label>
+                    <input type="text" name="pname">
+                </div>
+                <br>
+                <div class="form_group">
+                    <label>Phone:</label>
+                    <input type="text" name="phoneNum">
+                </div>
+                <br>
+                <div class="form_group">
+                    <label>Salary:</label>
+                    <input type="text" name="salary">
+                </div>
+            </div>
+    </center>
+    <br>
+    <center>
+        <button type="submit">Add</button>
+    </center>
+
+    </form>
+
+</body>
+
+</html>
